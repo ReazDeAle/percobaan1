@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #objek {
+            width: 300px;
+            height: 600px;
+            /* border: 1px solid tomato; */
+        }
+    </style>
+</head>
+<body>
+    <div id="objek">
+        <input id="color" type="color">
+    </div>
+    <script>
+        const inp = document.getElementById('color')
+        const objek = document.getElementById("objek")
+
+        objek.addEventListener('click', function(){
+            var objek = document.getElementById("objek")
+            const tempat = document.getElementById('color')
+            var warna = tempat.value
+            objek.style.backgroundColor = warna
+        })
+
+
+        // function warnabackground() {
+        //     var objek = document.getElementById("objek");
+        //     var color = document.getElementById("color")
+        //     var warna = color.value
+        //     // console.log(color.value)
+        //     objek.style.backgroundColor = warna
+        // }
+        // warnabackground()
+    </script>
+</body>
+</html>

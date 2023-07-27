@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Waktu</title>
+    <style>
+        body {
+            background-color: black;
+            overflow: hidden;
+            /* background:radial-gradient(black,black,black, aqua,black) ; */
+        }
+        .k1 {
+            background: radial-gradient(aqua,aqua,black,black);
+            width: 310px;
+            height: 310px;
+            margin: auto;
+            margin-top: 100px;
+            border: 5px dotted aqua;
+            border-radius: 50%;
+            animation: k1 90s linear infinite;
+            box-sizing: border-box;
+        }
+        #time {
+            border: 5px double goldenrod;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            box-sizing: border-box;
+            animation: time 5s linear infinite;
+        }
+        #h2 {
+            color: aqua;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            margin: auto;
+            margin-top: -170px;
+            width: 195px;
+            border: 3px double goldenrod;
+            border-radius: 50px;
+            background:radial-gradient( aqua, black);
+            box-sizing: border-box;
+            position: relative;
+            animation: h2 90s linear infinite;
+        }
+        .k2 {
+            background: radial-gradient(aqua, aqua, black, black);
+            width: 60px;
+            height: 60px;
+            border: 5px dotted aqua;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k2 30s linear infinite;
+        }
+        .k2a {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 35px;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 30px 0;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k2a 1.5s infinite;
+        }
+        .k2b {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 35px;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k2a 1.5s infinite;
+        }
+        .k3 {
+            background: radial-gradient(aqua, aqua, black, black);
+            width: 100px;
+            height: 100px;
+            border: 5px dotted aqua;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k3 35s linear infinite;
+        }
+        .k3a {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 65px;
+            height: 65px;
+            border: 2px solid black;
+            border-radius: 0px 100px;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k3a 2s infinite;
+        }
+        .k3b {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 65px;
+            height: 65px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k3a 2s infinite;
+        }
+        .k4 {
+            background: radial-gradient( aqua, aqua, black, black);
+            width: 200px;
+            height: 200px;
+            border: 5px dotted aqua;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k4 20s linear infinite;
+        }
+        .ka {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 130px;
+            height: 130px;
+            border: 2px solid black;
+            border-radius: 150px 0;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k5 2.5s infinite;
+        }
+        .ka2 {
+            background: radial-gradient(aqua, black, silver, silver);
+            width: 130px;
+            height: 130px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k5 2.5s infinite;
+        }
+        .kb {
+            /* background: radial-gradient( black, black, silver, silver); */
+            width: 190px;
+            height: 190px;
+            /* background: radial-gradient( aqua, aqua, black, black); */
+            border: 3px double goldenrod;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            animation: k6 10s linear infinite;
+        }
+        @keyframes k6 {
+            0% {
+                transform: matrix(0,-0.5,-0.5,0,0,0);
+            }
+            50% {
+                transform: matrix(0,-1.7,1.7,0,0,0);
+            }
+            100% {
+                transform: matrix(0,-0.5,-0.5,0,0,0);
+            }
+        }
+        @keyframes k1 {
+            0%{
+                rotate: 1turn;
+            }
+        }
+        @keyframes k4 {
+            0%{
+                transform: translate(50px,50px) rotate(-1turn);
+            }
+            100%{
+                transform: translate(50px,50px) rotate(2turn);
+            }
+        }
+        @keyframes k5 {
+            0% {
+                transform: translate(30px,30px) rotate(0)
+            }
+            100% {
+                transform: translate(30px,30px) rotate(-1turn)
+            }
+        }
+        @keyframes k3a {
+            0% {
+                transform: translate(13px,13px) rotate(0)
+            }
+            100% {
+                transform: translate(13px,13px) rotate(-1turn)
+            }
+        }
+        @keyframes k2a {
+            0% {
+                transform: translate(7.5px,7.5px) rotate(0)
+            }
+            100% {
+                transform: translate(7.5px,7.5px) rotate(1turn)
+            }
+        }
+        @keyframes time {
+            0%{
+                transform: matrix(0,1,1,0,0,0);
+            }
+        }
+        /* @keyframes time {
+            0%{
+                rotate: -1turn;
+            }
+        } */
+        @keyframes h2 {
+            0% {
+                rotate: -1turn;
+            }
+        }
+        @keyframes k2 {
+            0% {
+                transform: translate(120px,120px) rotate(-1turn) translateX(125px) rotate(1turn);
+            }
+            100% {
+                transform: translate(120px,120px) rotate(1turn) translateX(125px) rotate(-7turn);
+            }
+        }
+        @keyframes k3 {
+            0% {
+                transform: translate(100px,100px) rotate(1turn) translateX(105px) rotate(-7turn);
+            }
+            100% {
+                transform: translate(100px,100px) rotate(-1turn) translateX(105px) rotate(1turn);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="k1">
+        <div class="k3">
+            <div class="k3a"></div>
+            <div class="k3b"></div>
+        </div>
+        <div class="k2">
+            <div class="k2a"></div>
+            <div class="k2b"></div>
+        </div>
+        <div class="k4">
+            <div class="ka"></div>
+            <div class="ka2"></div>
+            <div class="kb"></div>
+        </div>
+        <div id="time"></div>
+        <h2 id="h2"></h2>
+    </div>
+
+    <script>
+
+    var waktu = setInterval(
+
+    function time(){
+        let detik = new Date().getSeconds()
+        let menit = new Date().getMinutes()
+        let jamx = new Date().getHours()
+        let harix = new Date().getDay()
+        let tanggal = new Date().getDate()
+        let bulanx = new Date().getMonth()
+        let tahun = new Date().getFullYear()
+
+        if(jamx <= 12) {
+            jamx = 'AM'
+        }
+        else {
+            jamx = 'PM'
+        }
+
+        let jam = new Date().getHours()
+
+        if(jam<10) {
+            jam = "0"+jam
+        }
+        if(menit<10) {
+            menit = "0"+menit
+        }
+        if(detik<10) {
+            detik = "0"+detik
+        }
+
+        let hari = ['AHAD', 'SENIN', 'SELASA', 'RABU', 'KAMIS', 'JUMAT', 'SABTU'][harix]
+
+        let bulan = ['JANUARI', 'FEBRUARI', 'MARET', 'APRIL', 'MEI', 'JUNI', 'JULI', 'AGUSTUS', 'SEPTEMBER', 'OKTOBER', 'DESEMBER'][bulanx]
+
+        document.getElementById('h2').innerHTML = `${detik} : ${menit} : ${jam} ${jamx}<br>${hari} / ${tanggal} ${bulan} / ${tahun} `
+
+
+        },1000
+        
+    )
+    </script>
+</body>
+</html>

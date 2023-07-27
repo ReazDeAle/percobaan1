@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  perspective: 1200px;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg) rotateY(-30deg);
+  margin: 200px auto;
+}
+
+.side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #36c512;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  line-height: 200px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="side front">Depan</div>
+        <div class="side back">Belakang</div>
+        <div class="side right">Kanan</div>
+        <div class="side left">Kiri</div>
+        <div class="side top">Atas</div>
+        <div class="side bottom">Bawah</div>
+      </div>
+</body>
+</html>

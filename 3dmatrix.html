@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  perspective: 500px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(86, 202, 32, 0.8);
+  border: 1px solid #d32020;
+}
+
+.front {
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 50, 1);
+}
+
+.back {
+  transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, -50, 1);
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+  <div class="face front"></div>
+  <div class="face back"></div>
+</div>
+
+</body>
+</html>
